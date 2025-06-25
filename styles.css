@@ -1,0 +1,368 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+mark {
+    font-weight: 800;
+}
+
+.card {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 16px;
+    max-width:400px;
+    background-color: #eeeeee;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 0 16px 0 #ffffff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card>img {
+    width:100%;
+}
+
+.card>.heading {
+    color: black;
+    font-size: 16px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    padding: 12px;
+    white-space: normal;
+    word-break: break-word; 
+}
+
+.card>.stack {
+    background-color: black;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    padding: 12px;
+}
+
+.skills-card {
+    font-size: 20px;
+    color: white;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.skills-image {
+    max-width: 150px;
+}
+
+#project-cards {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 2vw;
+}
+
+.skills-cards {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 2vw;
+}
+
+#heading {
+    display: inline-block;
+    width: 30%;
+    padding: 8px;
+    font-family: Michroma, monospace;
+}
+
+#url, #url > a{
+    color: #3d3d3d;
+}
+
+#links, #links>a {
+    float: right;
+    color: white;
+    font-family: Michroma, monospace;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 16px;
+}
+
+#links>a:hover {
+    background-color: #4d4d4d;
+    transition: 0.2s;
+}
+
+#hamburger-menu, #hamburger-menu>a {
+    float: right;
+    font-size: 48px;
+    display: none;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: Michroma;
+    padding-right: 8px;
+    padding-top:4px;
+}
+
+#about {
+    /*     background: linear-gradient(180deg,rgba(217, 217, 217, 1) 0%, rgb(158, 158, 158) 100%); */
+    background: linear-gradient(180deg,rgba(217, 217, 217, 1) 0%, rgb(144, 146, 167) 100%);
+    width: 100%;
+    margin-top: 90px;
+    min-height: 600px;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#about-text {
+    display: inline-block;
+    width: 30%;
+    padding-top: min(1vw, 40px);
+    padding-left: min(8vw, 300px);
+}
+
+#picture-div {
+    float: right;
+    padding-right: 120px;
+    padding-top: 50px;
+}
+
+#picture-div>img {
+    border-radius: 50%;
+    max-width: 500px;
+    max-height: 500px;
+    border: 8px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#about-text>h1 {
+    font-size: 72px;
+}
+
+#about-text>h2 {
+    font-size: 36px;
+}
+
+#about-text>button {
+    transition: 0.2s;
+    background-color: white;
+    border: 4px solid black;
+    color: black;
+    padding: 12px;
+    font-size: 20px;
+    width: 90%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-family: Rubik, Arial, Helvetica, sans-serif
+}
+
+#about-text>button:hover {
+    transition:0.2s;
+    color: white;
+    background-color: black;
+    border: 4px solid white;
+    cursor: pointer
+}
+
+#about-text>button:hover>img {
+    filter: invert(100%);
+}
+
+#about-text>button:hover>#upwork-icon {
+    filter: invert(0%);
+    content: url("images/upwork-2.png");
+}
+
+#about-text>button>img {
+    max-width: 32px;
+    max-height: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+#about-me {
+    background-color: #0C1821;
+    color: #eeeeee;
+    /* background-color: #eeeeee; */
+    width: 100%;
+}
+
+#about-me>h1 {
+    color: white;
+    font-family: Michroma, monospace;
+    font-size: 48px;
+    margin: 0px;
+    background-color: #FB4B4E;
+}
+
+#projects {
+    background-color: #0C1821;
+    /* background-image: linear-gradient(15deg, rgb(100, 36, 167) 0%, rgb(100, 36, 167) 7.692%, rgb(123, 39, 164) 7.692%, rgb(123, 39, 164) 15.385%, rgb(144, 47, 155) 15.385%, rgb(144, 47, 155) 23.077%, rgb(159, 57, 142) 23.077%, rgb(159, 57, 142) 30.769%, rgb(169, 70, 126) 30.769%, rgb(169, 70, 126) 38.462%, rgb(171, 84, 107) 38.462%, rgb(171, 84, 107) 46.154%, rgb(165, 99, 88) 46.154%, rgb(165, 99, 88) 53.846%, rgb(153, 114, 69) 53.846%, rgb(153, 114, 69) 61.538%, rgb(135, 129, 53) 61.538%, rgb(135, 129, 53) 69.231%, rgb(112, 141, 40) 69.231%, rgb(112, 141, 40) 76.923%, rgb(89, 151, 32) 76.923%, rgb(89, 151, 32) 84.615%, rgb(67, 159, 30) 84.615%, rgb(67, 159, 30) 92.308%, rgb(47, 162, 33) 92.308%, rgb(47, 162, 33) 100%); */
+    /* background-color: #eeeeee; */
+    width: 100%;
+}
+
+#projects>h1 {
+    text-align: right;
+    color: #111111;
+    font-family: Michroma, monospace;
+    font-size: 48px;
+    margin: 0px;
+    background-color: #E39EC1;
+}
+
+#skills {
+    background-color: #0C1821;
+    width: 100%;
+}
+
+#skills>h1 {
+    text-align: left;
+    color: #111111;
+    font-family: Michroma, monospace;
+    font-size: 48px;
+    margin: 0px;
+    background-color: #50FFB1;
+}
+
+#certs {
+    background-color: #0C1821;
+    width: 100%;
+}
+
+#certs>h1 {
+    text-align: right;
+    color: #eeeeee;
+    font-family: Michroma, monospace;
+    font-size: 48px;
+    margin: 0px;
+    background-color: #3066BE;
+}
+
+#skills>h2 {
+    color: #eeeeee;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+#about-me>p {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    line-height: 56px;
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+    padding: 32px;
+}
+
+#para1 > mark {
+    background-color: #fffca3;
+}
+
+#para2 > mark {
+    background-color: #a9ffa9;
+}
+
+#para3 > mark {
+    background-color: #a8d0ff;
+}
+
+@media (max-width: 1044px) {
+    #url {
+        display: none;
+    }
+
+    #heading {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1230px) {
+    #picture-div {
+        padding-right: 40px;
+    }
+
+    #picture-div>img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    #about-text {
+        padding-left: 20px;
+        padding-top: 0px;
+        width: 40%;
+    }
+}
+
+@media (max-width: 816px) {
+    #about-text {
+        width: 90%;
+        display: block;
+    }
+
+    #picture-div {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        margin-left: 4%; 
+    }
+
+    #about {
+        min-height: 825px;
+    }
+
+    #about-text>button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    #about-text>h1 {
+        font-size: 56px;
+    }
+
+    #about-text>h2 {
+        font-size: 36px;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #heading {
+        width: 70%;
+    }
+
+    #hamburger-menu, #hamburger-menu>a {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 463px) {
+    #picture-div > img {
+        max-width: 80%;
+        max-height: 80%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        margin-right: 5%;
+    }
+}
