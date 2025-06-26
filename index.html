@@ -2,6 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="I'm a backend developer available for contract work, highly specialized in API & Blockchain development. This page features my portfolio - projects, skills, certifications, events I've participated in and the awards I've won.">
+        <meta name="keywords" content="Backend developer, API developer, Blockchain developer, Web3 Developer, Full-Stack Developer, DApp Developer, Ethereum Developer">
+        <meta name="author" content="Pranav Mishra">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        
         <title>Pranav M. | API & Blockchain Developer</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,226 +14,304 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
-        <nav>
-            <div id="heading">
-                <h1>Pranav M. <span id="url">| <a href="/">pranav.cl</a></span></h1>
-            </div>
+        <header>
+            <nav>
+                <div id="heading">
+                    Pranav M. <span id="url">| <a href="/#heading">pranav.cl</a></span>
+                </div>
 
-            <div id="links">
-                <a href="google.com">Other</a>
-                <a href="google.com">Certs</a>
-                <a href="google.com">Skills</a>
-                <a href="google.com">Projects</a>
-                <a href="google.com">About</a>
-            </div>
+                <div id="links">
+                    <ul>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certs">Certs</a></li>
+                        <li><a href="#other">Other</a></li>
+                    </ul>
+                </div>
 
-            <div id="hamburger-menu">
-                <a href="google.com">≡</a>
-            </div>
-        </nav>
+                <div id="hamburger-menu">
+                    <a href="#hamburger-menu" aria-label="Hamburger Menu">≡</a>
+                </div>
+            </nav>
+        </header>
 
-        <div id="about">
-            <div id="about-text">
-                <h1>Hey, I'm Pranav.</h1>
-                <h2>I am a backend developer, specializing in API & Blockchain solutions.</h2>
-                <button>
-                    <img id = "upwork-icon" src="images/upwork-1.png">
-                    CONNECT ON UPWORK
-                </button>
-                <button>
-                    <img src="images/github.png">
-                    VIEW MY WORK
-                </button>
-            </div>
+        <main>
+            <section id="banner">
+                <div id="banner-text">
+                    <h1>Hey, I'm Pranav.</h1>
+                    <span>I am a backend developer, specializing in API & Blockchain solutions.</span>
 
-            <div id="picture-div">
-                <img src="images/my-pic.png">
-            </div>
+                    <a target="_blank" href="https://www.upwork.com/freelancers/~016aa0976d072a6aa4?mp_source=share">
+                        <img id = "upwork-icon" src="images/upwork-1.png" alt="Upwork logo">
+                        CONNECT ON UPWORK
+                    </a>
+                    <a target="_blank" href="https://github.com/pranavcl">
+                        <img src="images/github.png" alt="GitHub logo">
+                        VIEW MY WORK
+                    </a>
+                </div>
+
+                <div id="picture-div">
+                    <img src="images/my-pic.png" alt="A photo of me on a windy day on a hill, probably clicked sometime in 2024">
+                </div>
+            </section>
+
+            <section id="about-me">
+                <h2>About Me</h2>
+
+                <p id="para1">I'm a <strong>backend & blockchain</strong> developer passionate about building <mark>secure</mark>, <mark>performant</mark>, and <mark>scalable</mark> systems. I specialize in <mark>API development</mark>, <mark>smart contracts</mark>, and backend architecture that enables real-world functionality — from collaboration platforms to <mark>decentralized applications.</mark></p>
+
+                <p id="para2">My main stack includes <mark>Node.js</mark>, <mark>TypeScript</mark>, <mark>PostgreSQL</mark>, <mark>MongoDB</mark>, <mark>Ethers.js</mark>, <mark>Hardhat</mark> and <marK>Solidity</marK>. I've built full-fledged <b>REST APIs</b>, <b>real-time chat apps</b>, <b>blockchain-based utilities</b>, and <b>smart contract-powered dApps</b>. I also enjoy working with <mark>Python</mark>, <mark>Flask</mark>, <mark>Golang</mark>, <mark>Gin</mark>, <mark>Bubbletea</mark> and <mark>Redis</mark>.</p>
+
+                <p id="para3">Whether it's <mark>building robust APIs</mark> or <mark>bridging Web2 and Web3</mark>, I love solving complex problems and creating tools that are practical, lightweight, and easy to use.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div id="project-cards">
+                    <a class="card" href="https://github.com/pranavcl/productive-api" target="_blank">
+                        <img src="images/productive-api-thumbnail.png" alt="'Productive API' written with an emoji of a hammer and a wrench with a coding IDE in the background">
+                        <div class="heading">
+                            Advanced & Scalable REST API for Secure Collaborative Productivity
+                        </div>
+                        <div class="stack">
+                            <b>Stack:</b> Node.js, Express, TypeScript, JWT Tokens, MongoDB 
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/pranavcl/quickchat-local" target="_blank">
+                        <img src="images/quick-chat-local-thumbnail.png" alt="A screenshot of the app, with 2 users (John and Jane Doe) chatting. 'QuickChat Local' is written next to the screenshot in big font">
+                        <div class="heading">
+                            IRC-Inspired Real-Time Chat App with Advanced Features
+                        </div>
+                        <div class="stack">
+                            <b>Stack:</b> Node.js, Socket.io, TypeScript, MongoDB, HTML, CSS 
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/pranavcl/prune-url", target="_blank">
+                        <img src="images/prune-url-thumbnail.png" alt="'PruneURL' written with an emoji of a globe with meridians marked. An interface of the admin panel is in the background">
+                        <div class="heading">
+                            Secure and Feature-Rich URL Shortener with Analytics & Admin Controls
+                        </div>
+                        <div class="stack">
+                            <b>Stack:</b> Python, Flask, PostgreSQL, HTML, CSS, TypeScript, Redis
+                        </div>
+                    </a>
+
+                    <a class="card" href="https://github.com/pranavcl/project-creds" target="_blank">
+                        <img src="images/project-creds-thumbnail.png" alt="A pink-purple gradient is in the background, with the text 'Project Creds' and a vector art of a coin with 'PC' written on it">
+                        <div class="heading">
+                            Smart Contract Based Token with Web3 Frontend and Testing Framework
+                        </div>
+                        <div class="stack">
+                            <b>Stack:</b> Solidity, Hardhat, HTML, CSS, TypeScript, Vite, Ethers.js
+                        </div>
+                    </a>
+                    
+                    <a class="card" href="https://github.com/pranavcl/meta-donate" target="_blank">
+                        <img src="images/metadonate-thumbnail.png" alt="A PayPal.me-like Ethereum donation page with blue-green gradient. The page belongs to 'John Doe', a systems engineer.">
+                        <div class="heading">
+                            PayPal.me-Inspired Ethereum Tip Page | Web3 + MetaMask Support
+                        </div>
+                        <div class="stack">
+                            <b>Stack:</b> HTML, CSS, JavaScript, Ethers.js
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+
+                <h3>Programming Languages</h3>
+
+                <div class="skills-cards">
+                    <div class="skills-card">
+                        <img src="images/typescript.png" class="skills-image" alt="TypeScript logo"><br>
+                        TypeScript
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/javascript.webp" class="skills-image" alt="JavaScript logo"><br>
+                        JavaScript
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/solidity.png" class="skills-image" alt="Solidity logo"><br>
+                        Solidity
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/python.webp" class="skills-image" alt="Python logo"><br>
+                        Python
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/html.webp" class="skills-image" alt="HTML logo"><br>
+                        HTML
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/css.webp" class="skills-image" alt="CSS logo"><br>
+                        CSS
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/sql.webp" class="skills-image" alt="SQL logo"><br>
+                        SQL
+                    </div>
+                </div>
+
+                <h3>Databases</h3>
+
+                <div class="skills-cards">
+                    <div class="skills-card">
+                        <img src="images/mongo.webp" class="skills-image" alt="MongoDB logo"><br>
+                        MongoDB
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/postgres.webp" class="skills-image" alt="Postgres logo"><br>
+                        PostgreSQL
+                    </div>
+                </div>
+
+                <h3>Libraries / Frameworks / Other Tools</h3>
+
+                <div class="skills-cards">
+                    <div class="skills-card">
+                        <img src="images/nodejs.webp" class="skills-image" alt="Node.js logo"><br>
+                        Node.js
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/express.webp" class="skills-image" alt="Express logo"><br>
+                        Express
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/socketio.webp" class="skills-image" alt="Socket.io logo"><br>
+                        Socket.io
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/flask.webp" class="skills-image" alt="Flask logo"><br>
+                        Flask
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/redis.webp" class="skills-image" alt="Redis logo"><br>
+                        Redis
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/vite.webp" class="skills-image" alt="Vite logo"><br>
+                        Vite
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/ethersjs.png" class="skills-image" alt="Ethers.js logo"><br>
+                        Ethers.js
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/hardhat.png" class="skills-image" alt="Hardhat logo"><br>
+                        Hardhat
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/linux.webp" class="skills-image" alt="Linux logo"><br>
+                        Linux
+                    </div>
+
+                    <div class="skills-card">
+                        <img src="images/p5.png" class="skills-image" alt="p5.js logo"><br>
+                        p5.js
+                    </div>
+                </div>
+            </section>
+
+            <section id="certs">
+                <h2>Certifications</h2>
+
+                <div class="skills-cards">
+                    <a class="certs-card" href="images/postman-cert.png" target="_blank">
+                        <img src="images/postman-cert.png" class="certs-image" alt="A thumbnail of my 'Postman API Fundamentals Students Expert' certificate"><br>
+                        Postman API Fundamentals Students Expert
+                    </a>
+
+                    <a class="certs-card" href="images/board-infinity-cert.png" target="_blank">
+                        <img src="images/board-infinity-cert.png" class="certs-image" alt="A thumbnail of my 'Board Infinity: Building RESTful APIs with Node.js and Express' certificate"><br>
+                        Board Infinity: Building RESTful APIs with Node.js and Express
+                    </a>
+
+                    <a class="certs-card" href="images/python-cert.png" target="_blank">
+                        <img src="images/python-cert.png" class="certs-image" alt="A thumbnail of my 'University of Colorado, Boulder: Data Visualization in Python' certificate"><br>
+                        University of Colorado, Boulder: Data Visualization in Python
+                    </a>
+
+                    <a class="certs-card" href="images/java-cert.png" target="_blank">
+                        <img src="images/java-cert.png" class="certs-image" alt="A thumbnail of my 'Board Infinity: Fundamentals of Java Programming' certificate"><br>
+                        Board Infinity: Fundamentals of Java Programming
+                    </a>
+                </div>
+            </section>
+
+            <section id="other">
+                <h2>Other</h2>
+
+                <div id="other-cards">
+                    <a class="other-card" href="images/poster-award.jpeg" target="_blank">
+                        <img src="images/poster-thumbnail.jpeg" alt="A trophy for 'Best Poster Award' in front of a white background on a wooden table">
+                        <div class="heading">
+                            My Research Project Won 'Best Poster Award' at a conference in Dubai
+                        </div>
+                    </a>
+
+                    <a class="other-card" href="https://ldjam.com/events/ludum-dare/57/beastbound" target="_blank">
+                        <img src="images/beastbound-thumbnail.png" alt="A screenshot of my game, Beastbound. A pixel-art jungle boy is in front of his hut in the plains. 'Beastbound' is written with Papyrus font.">
+                        <div class="heading">
+                            Participated in Ludum Dare 57 🕹️ and created a game in 72 hours with HTML5 Canvas and p5.js
+                        </div>
+                    </a>
+
+                    <a class="other-card" href="images/hacknova-cert.png" target="_blank">
+                        <img src="images/hacknova-thumbnail.png" alt="A thumbnail of the certificate I received for participating in the Hacknova 2024 CTF">
+                        <div class="heading">
+                            Participated in Hacknova 2024 cybersecurity competition (hosted by Schneider Electric)
+                        </div>
+                    </a>
+
+                    <a class="other-card" href="https://ldjam.com/events/ludum-dare/56/tinyanhilation" target="_blank">
+                        <img src="images/tinyanhilation-thumbnail.jpg" alt="A screenshot of my game, TinyAnhilation. A HUD in the bottom-left lists the player's strength, weapon level, speed, money and health. The game features two teams: Red and Blue who must try to deplete each other's nexus till it reaches 0 HP.">
+                        <div class="heading">
+                            Participated in Ludum Dare 56 🕹️ and created a game in 48 hours with C and Raylib
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <div id="hamburger-menu-popup">
+            <ul>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certs">Certs</a></li>
+                <li><a href="#other">Other</a></li>
+            </ul>
         </div>
 
-        <div id="about-me">
-            <h1>About Me</h1>
-
-            <p id="para1">I'm a <strong>backend & blockchain</strong> developer passionate about building <mark>secure</mark>, <mark>performant</mark>, and <mark>scalable</mark> systems. I specialize in <mark>API development</mark>, <mark>smart contracts</mark>, and backend architecture that enables real-world functionality — from collaboration platforms to <mark>decentralized applications.</mark></p>
-
-            <p id="para2">My main stack includes <mark>Node.js</mark>, <mark>TypeScript</mark>, <mark>PostgreSQL</mark>, <mark>MongoDB</mark>, <mark>Ethers.js</mark>, <mark>Hardhat</mark> and <marK>Solidity</marK>. I've built full-fledged <b>REST APIs</b>, <b>real-time chat apps</b>, <b>blockchain-based utilities</b>, and <b>smart contract-powered dApps</b>. I also enjoy working with <mark>Python</mark>, <mark>Flask</mark>, <mark>Golang</mark>, <mark>Gin</mark>, <mark>Bubbletea</mark> and <mark>Redis</mark>.</p>
-
-            <p id="para3">Whether it's <mark>building robust APIs</mark> or <mark>bridging Web2 and Web3</mark>, I love solving complex problems and creating tools that are practical, lightweight, and easy to use.</p>
-        </div>
-
-        <div id="projects">
-            <h1>Projects</h1>
-
-            <div id="project-cards">
-                <div class="card">
-                    <img src="images/productive-api-thumbnail.png">
-                    <div class="heading">
-                        Advanced & Scalable REST API for Secure Collaborative Productivity
-                    </div>
-                    <div class="stack">
-                        <b>Stack:</b> Node.js, Express, TypeScript, JWT Tokens, MongoDB 
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/quick-chat-local-thumbnail.png">
-                    <div class="heading">
-                        IRC-Inspired Real-Time Chat App with Advanced Features
-                    </div>
-                    <div class="stack">
-                        <b>Stack:</b> Node.js, Socket.io, TypeScript, MongoDB, HTML, CSS 
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/prune-url-thumbnail.png">
-                    <div class="heading">
-                        Secure and Feature-Rich URL Shortener with Analytics & Admin Controls
-                    </div>
-                    <div class="stack">
-                        <b>Stack:</b> Python, Flask, PostgreSQL, HTML, CSS, TypeScript, Redis
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/project-creds-thumbnail.png">
-                    <div class="heading">
-                        Smart Contract Based Token with Web3 Frontend and Testing Framework
-                    </div>
-                    <div class="stack">
-                        <b>Stack:</b> Solidity, Hardhat, HTML, CSS, TypeScript, Vite, Ethers.js
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="images/metadonate-thumbnail.png">
-                    <div class="heading">
-                        PayPal.me-Inspired Ethereum Tip Page | Web3 + MetaMask Support
-                    </div>
-                    <div class="stack">
-                        <b>Stack:</b> HTML, CSS, JavaScript, Ethers.js
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="skills">
-            <h1>Skills</h1>
-
-            <h2>Programming Languages</h2>
-
-            <div class="skills-cards">
-                <div class="skills-card">
-                    <img src="images/typescript.png" class="skills-image"><br>
-                    TypeScript
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/javascript.webp" class="skills-image"><br>
-                    JavaScript
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/solidity.png" class="skills-image"><br>
-                    Solidity
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/python.webp" class="skills-image"><br>
-                    Python
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/html.webp" class="skills-image"><br>
-                    HTML
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/css.webp" class="skills-image"><br>
-                    CSS
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/sql.webp" class="skills-image"><br>
-                    SQL
-                </div>
-            </div>
-
-            <h2>Databases</h2>
-
-            <div class="skills-cards">
-                <div class="skills-card">
-                    <img src="images/mongo.webp" class="skills-image"><br>
-                    MongoDB
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/postgres.webp" class="skills-image"><br>
-                    PostgreSQL
-                </div>
-            </div>
-
-            <h2>Libraries/Frameworks/Other Tools</h2>
-
-            <div class="skills-cards">
-                <div class="skills-card">
-                    <img src="images/nodejs.webp" class="skills-image"><br>
-                    Node.js
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/express.webp" class="skills-image"><br>
-                    Express
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/socketio.webp" class="skills-image"><br>
-                    Socket.io
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/flask.webp" class="skills-image"><br>
-                    Flask
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/redis.webp" class="skills-image"><br>
-                    Redis
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/vite.webp" class="skills-image"><br>
-                    Vite
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/ethersjs.png" class="skills-image"><br>
-                    Ethers.js
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/hardhat.png" class="skills-image"><br>
-                    Hardhat
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/linux.webp" class="skills-image"><br>
-                    Linux
-                </div>
-
-                <div class="skills-card">
-                    <img src="images/p5.png" class="skills-image"><br>
-                    p5.js
-                </div>
-            </div>
-        </div>
-
-        <div id="certs">
-            <h1>Certifications</h1>
-        </div>
+        <footer>
+            ❤️ Website template made by me. <a href="#heading">Back to top</a>
+        </footer>
     </body>
 </html>
