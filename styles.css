@@ -189,6 +189,10 @@ nav {
     cursor: pointer
 }
 
+#green-upwork-icon {
+    display: none;
+}
+
 #banner-text>a:hover>img, #banner-text>a:focus>img {
     filter: invert(100%);
 }
@@ -241,6 +245,9 @@ nav {
     #banner-text {
         width: 90%;
         display: block;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #picture-div {
@@ -253,10 +260,6 @@ nav {
 
     #banner {
         min-height: 825px;
-    }
-
-    #banner-text>a {
-        width: 100%;
     }
 }
 
@@ -352,7 +355,7 @@ mark {
     background-color: #eeeeee;
     transition: 0.2s;
     text-decoration: none;
-    height: 433px;
+    max-height: 433px;
 }
 
 .card:hover,.other-card:hover, .card:focus, .other-card:focus {
@@ -409,7 +412,7 @@ mark {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding: 30px;
+    padding: 10px;
 }
 
 .skills-card {
@@ -467,7 +470,7 @@ mark {
     max-width:400px;
     background-color: #eeeeee;
     transition: 0.2s;
-    height: 383px;
+    max-height: 383px;
     text-decoration: none;
 }
 
@@ -486,4 +489,39 @@ footer {
     font-family: Michroma, monospace;
     font-size: 36px;
     background-color: #111111;
+}
+
+/* Fixes for mobile screens */
+
+@media (max-width: 600px) {
+    #banner-text>span {
+        font-size: 28px;
+    }
+
+    #banner-text {
+        padding-left: 4px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #about-me > p {
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 16px;
+    }
+
+    #skills > h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .skills-image {
+        max-width: 64px;
+    }
+
+    footer {
+        font-size: 32px;
+    }
 }
