@@ -6,6 +6,13 @@ body {
     overflow-x: hidden;
 }
 
+header, nav, main, footer {
+    max-width: 1920px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 nav {
     position: absolute;
     top: 0;
@@ -188,7 +195,7 @@ nav {
 
 #banner-text>a:hover>#upwork-icon, #banner-text>a:focus>#upwork-icon {
     filter: invert(0%);
-    content: url("images/upwork-2.png");
+    content: url("images/upwork-2.webp");
 }
 
 #banner-text>a>img {
